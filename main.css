@@ -2,44 +2,125 @@ body {
   font-family: 'Zilla Slab', arial, sans-serif;
   font-weight: lighter;
   color: white;
-  background-image: url("https://i.imgur.com/QztlVTN.jpeg");
-  background-size: cover;
-  background-color: #f3f3f3;
+  background-color: #333;
   cursor: default;
-  margin: auto;
-  width: 100%;
 }
 
 .email-img {
   border-radius: 50%;
   height: 42px;
   width: 42px;
+  /* Needs a default opacity to be set so it knows what value to transition from/to.
+    If the transition property is inside the :hover subclass then it only applies while 
+    the element is being hovered, which means that when the mouse stops hovering the element
+    the transition doesn't occur. This results in the transition only happening when hovering
+    the mouse over the element but not when moving the mouse to outside of the element. */
+  opacity: 1;
+  transition: opacity 500ms ease;
 }
 
 .email-img:hover {
   opacity: 0.4;
-  transition-delay: 20ms;
-}
-
-.email-spacer {
-  text-align: center;
-  padding-top: 1px;
-  padding-bottom: 5.5%;
 }
 
 .job-pad {
-  text-align: center;
-  font-size: 32px;
+  margin-top: 0px;
 }
 
 .name-pad {
-  text-align: center;
   font-size: 100px;
-  padding-top: 13.5%;
-  padding-bottom: 1px;
+  margin: 0;
+  margin-bottom: 4px;
 }
 
-.place-pad {
-  text-align: center;
+h2 {
   font-size: 32px;
+}
+
+/* Use viewport-relative (vw = viewport width) units to cover the page fully */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Override the browser default to prevent extra width/height on the edges */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Include the border and padding when calculating width and height of 
+  all elements. This prevents '100vh' and '100vw' being slightly larger 
+  than the viewport and creating unwanted scrollbars on certain browsers. */
+* {
+  box-sizing: border-box;
+}
+
+/* Full-sized container that fills up the parent element <body> */
+.content-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Container for the background image that fills up the 
+  parent element content-container. Uses z-index to put 
+  the background image behind the text content. Hides any 
+  overflowing portions of it's child <img> element */
+.bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background image that fills up 100% of parent element bg-img-container.
+  Important that 'width' property is not set and only 'height' is set to 100%
+  so that the image retains it's normal aspect ratio and is not stretched.
+  Setting the min-width and min-height will make it adjust to fit those as 
+  necessary depending on the viewport size without stretching the image
+  out of it's normal aspect ratio. */
+.bg-img-container img {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* Container for the text and button elements, fills the entire 
+  parent content-container and uses flex to center all of the content. */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Mobile styles that will only apply when the screen size is below 1000px wide. */
+@media screen and (max-width: 999px) {
+
+  /* Move the content up so it looks a bit better on mobile */
+  .center-container {
+    justify-content: flex-start;
+    padding-top: min(40%, 240px);
+  }
+
+  /* Sets the font-size to 10% of the viewport width so that it scales based on 
+    the size of the screen. Uses the CSS max() function which will calculate the 
+    given values at runtime and use only the one which is larger. So if 10% of the 
+    viewport width is anything less than 24px, then it will use 24px as the font-size.
+    This prevents the font from becoming tiny and unreadable on very small phones. */
+  .center-container h1 {
+    font-size: max(10vw, 24px);
+  }
+
+  .center-container h2 {
+    font-size: max(3.2vw, 20px);
+  }
 }
