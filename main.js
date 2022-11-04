@@ -23,3 +23,4 @@ function currentTime() {
   let t = setTimeout(function(){ currentTime() }, 1000);
 }
 currentTime();
+console.log("Copyright © 2022 All Rights Reserved. Easter egg message!")
