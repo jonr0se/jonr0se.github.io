@@ -12,18 +12,14 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <div class="content-container">
-    <div class="bg-img-container">
-      <img src="https://i.imgur.com/QztlVTN.jpeg" alt="background mountains" />
-    </div>
-	
-	
-	
-	
+    <div id="page-top-background-image-container" class="bg-img-container"></div>
     <div class="center-container">
       <h1 class="name-pad">JONATHAN</h1>
       <h2 class="job-pad">Software Engineer</h2>
@@ -46,109 +42,210 @@
             alt="github icon" />
         </a>
       </div>
-	  
+
     </div>
-		<h2 id = "clock" onload="currentTime()"></h2>
-		<h2>PROFILE</h2>
-        <p>I am an expert website developer and designer with experience in HTML 5, CSS 3, JavaScript, jQuery, React, and NodeJS.<br>
-		<br>
-		I specialize in creating, improving, and deploying websites, testing user interfaces, enhancing overall user experience and website functionality.<br>
-		<br>
-		My focus recently has been HTML 5, CSS 3, JavaScript, and React.<br>
-		<br>
-		I'm great at building websites from the ground up.<br>
-		<br>
-		I love tinkering with website creation, editing, design, and difficult bug fixes.<br>
-		<br>
-		I'm very flexible and happy to work with you on anything you may need!<br>
-		<br>
-		Please do not hesitate to contact me!<br>
-		<br>
-		Available via Zoom upon request. </p>
-		<h2>RESUME</h2>
-		<p>JONATHAN R. ROSE</p>
-		<p>Phone Available upon request</p>
-		<h2>WORK EXPERIENCE</h2>
-		<p>Web Developer Independent Contractor (Self-Employed)</p>
-		<p>Upwork.com</p>
-		<p>Dates of Employment: 2020 - Current</p>
-		<p>Program, design, and deploy websites for real world use.<br>
-		<br>
-		Regularly meet with clients remotely via Zoom to discuss expectations, details, and requirements.<br>
-		<br>
-		Implement changes and bug fixes to various websites on demand.<br>
-		<br>
-		Stress test user interfaces in order to improve overall user experience.</p>
-		<h2>EDUCATION</h2>
-		<p>Bachelor of Science, Computer Information Systems (In Progress)</p>
-		<p>California State University, Chico</p>
-		<p>2020 - Current</p>
-		<p>Associate Transfer Degree, Computer Science</p>
-		<p>Butte College</p>
-		<p>2015 - 2018</p>
-		<p>Special Courses & Training</p>
-		<p>Programming I, II, III, Database Design, Discrete Mathematics</p>
-		<p>Japanese I and II, French I and II</p>
-		<p>Recent Courses:</p>
-		<p>Business Law</p>
-		<p>Marketing</p>
-		<h2>PROFESSIONAL SKILLS</h2>
-		<p>HTML 5, CSS 3, JavaScript, jQuery, React, NodeJS, C++, UI, UX</p>
-		<h2>PERSONAL DETAILS</h2>
-		<p>Nationality: United States</p>
-		<p>Location: Northern California</p>
-		<h2>Languages</h2>
-		<p>English (native)</p>
-		<p>Japanese</p>
-		<p>French</p>
-		<h2>Countries Visited</h2>
-		<p><a href="https://www.france.fr/en">
-		<img
-            src="https://i.imgur.com/OC9wS6I.png"
-            alt="france icon" />
-		</a></p>
-		<p><a href="https://www.deutschland.de/en">
-		<img
-            src="https://i.imgur.com/OCbZqkG.png"
-            alt="germany icon" />
-		</a></p>
-		<p><a href="https://www.belgium.be/en">
-		<img
-            src="https://i.imgur.com/K3aJJKH.png"
-            alt="belgium icon" />
-		</a></p>
-		<p><a href="https://www.government.nl/">
-		<img
-            src="https://i.imgur.com/ymuQvqJ.png"
-            alt="netherlands icon" />
-		</a></p>
-		<p><a href="https://www.admin.ch/gov/en/start.html">
-		<img
-            src="https://i.imgur.com/CJaQ426.png"
-            alt="swiss icon" />
-		</a></p>
-		<h2>Payments</h2>
-		<br>
-		<p>BTC: 3PqRUMKUTxXasPqaYvYW5RZxoCcNub3Zmq</p>
-		<p>ETH: 0xd43969C708Bb82557cD2F053D4Dade52fED99c7C</p>
-		<p>LTC: LduhYEBd2HpWrWWhqhj2xEBJidLx5TFCgh</p>
-		<p>BCH: ppd3eycmnmfuklv8azrkpnhumknlkhvq9gy4xmm7sx</p>
-		<br>
-		<p><a href="https://cash.app/$jonrose0">
-		<img
-            src="https://i.imgur.com/3WqjnWO.png"
-            alt="cash icon" />
-		</a></p>
-		<br>
-		<br>
-		<a class="weatherwidget-io" href="https://forecast7.com/en/38d58n121d49/sacramento/?unit=us" data-label_1="SACRAMENTO" data-label_2="WEATHER" data-font="Arial" data-theme="weather_one" >SACRAMENTO WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+    <h2 id="clock" onload="currentTime()"></h2>
+    <h2>PROFILE</h2>
+    <p>I am an expert website developer and designer with experience in HTML 5, CSS 3, JavaScript, jQuery, React, and
+      NodeJS.<br>
+      <br>
+      I specialize in creating, improving, and deploying websites, testing user interfaces, enhancing overall user
+      experience and website functionality.<br>
+      <br>
+      My focus recently has been HTML 5, CSS 3, JavaScript, and React.<br>
+      <br>
+      I'm great at building websites from the ground up.<br>
+      <br>
+      I love tinkering with website creation, editing, design, and difficult bug fixes.<br>
+      <br>
+      I'm very flexible and happy to work with you on anything you may need!<br>
+      <br>
+      Please do not hesitate to contact me!<br>
+      <br>
+      Available via Zoom upon request.
+    </p>
+    <h2>RESUME</h2>
+    <p>JONATHAN R. ROSE</p>
+    <p>Phone Available upon request</p>
+    <h2>WORK EXPERIENCE</h2>
+    <p>Web Developer Independent Contractor (Self-Employed)</p>
+    <p>Upwork.com</p>
+    <p>Dates of Employment: 2020 - Current</p>
+    <p>Program, design, and deploy websites for real world use.<br>
+      <br>
+      Regularly meet with clients remotely via Zoom to discuss expectations, details, and requirements.<br>
+      <br>
+      Implement changes and bug fixes to various websites on demand.<br>
+      <br>
+      Stress test user interfaces in order to improve overall user experience.
+    </p>
+    <h2>EDUCATION</h2>
+    <p>Bachelor of Science, Computer Information Systems (In Progress)</p>
+    <p>California State University, Chico</p>
+    <p>2020 - Current</p>
+    <p>Associate Transfer Degree, Computer Science</p>
+    <p>Butte College</p>
+    <p>2015 - 2018</p>
+    <p>Special Courses & Training</p>
+    <p>Programming I, II, III, Database Design, Discrete Mathematics</p>
+    <p>Japanese I and II, French I and II</p>
+    <p>Recent Courses:</p>
+    <p>Business Law</p>
+    <p>Marketing</p>
+    <h2>PROFESSIONAL SKILLS</h2>
+    <p>HTML 5, CSS 3, JavaScript, jQuery, React, NodeJS, C++, UI, UX</p>
+    <h2>PERSONAL DETAILS</h2>
+    <p>Nationality: United States</p>
+    <p>Location: Northern California</p>
+    <h2>Languages</h2>
+    <p>English (native)</p>
+    <p>Japanese</p>
+    <p>French</p>
+    <h2>Countries Visited</h2>
+    <div class="container country-cards">
+      <div class="card-deck justify-content-center align-items-center">
+        <div class="card">
+          <span class="badge badge-light position-absolute mt-2 ml-2 shadow-sm">France</span>
+          <div class="card-img-top-container">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80"
+              alt="France Image">
+          </div>
+          <div class="card-body">
+            <a href="https://www.france.fr/en" class="btn btn-light p-0 flag-icon-button">
+              <div class="svg-container">
+                <svg width="90" height="67.5" viewBox="0 0 640 480" fill-rule="evenodd" clip-rule="evenodd"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path fill="#fff" d="M0 0h640v480H0z" />
+                    <path fill="#002654" d="M0 0h213.3v480H0z" />
+                    <path fill="#ce1126" d="M426.7 0H640v480H426.7z" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-light position-absolute mt-2 ml-2 shadow-sm">Germany</span>
+          <div class="card-img-top-container">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80"
+              alt="Germany Image">
+          </div>
+          <div class="card-body">
+            <a href="https://www.germany.travel/en.html" class="btn btn-light p-0 flag-icon-button horizontal">
+              <div class="svg-container">
+                <svg width="90" height="67.5" viewBox="0 0 640 480" fill-rule="evenodd" clip-rule="evenodd"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality">
+                  <path fill="#ffce00" d="M0 320h640v160H0z" />
+                  <path d="M0 0h640v160H0z" />
+                  <path fill="#d00" d="M0 160h640v160H0z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-light position-absolute mt-2 ml-2 shadow-sm">Belgium</span>
+          <div class="card-img-top-container">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVsZ2l1bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=80"
+              alt="Belgium Image">
+          </div>
+          <div class="card-body">
+            <a href="https://visit.belgium.be/en" class="btn btn-light p-0 flag-icon-button">
+              <div class="svg-container">
+                <svg width="90" height="67.5" viewBox="0 0 640 480" fill-rule="evenodd" clip-rule="evenodd"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path d="M0 0h213.3v480H0z" />
+                    <path fill="#ffd90c" d="M213.3 0h213.4v480H213.3z" />
+                    <path fill="#f31830" d="M426.7 0H640v480H426.7z" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-light position-absolute mt-2 ml-2 shadow-sm">Netherlands</span>
+          <div class="card-img-top-container">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80"
+              alt="Netherlands Image">
+          </div>
+          <div class="card-body">
+            <a href="https://www.holland.com/global/tourism/" class="btn btn-light p-0 flag-icon-button">
+              <div class="svg-container">
+                <svg width="90" height="67.5" viewBox="0 0 640 480" fill-rule="evenodd" clip-rule="evenodd"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality">
+                  <path fill="#21468b" d="M0 0h640v480H0z" />
+                  <path fill="#fff" d="M0 0h640v320H0z" />
+                  <path fill="#ae1c28" d="M0 0h640v160H0z" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="badge badge-light position-absolute mt-2 ml-2 shadow-sm">Switzerland</span>
+          <div class="card-img-top-container">
+            <img class="card-img-top"
+              src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80"
+              alt="Switzerland Image">
+          </div>
+          <div class="card-body">
+            <a href="https://www.myswitzerland.com/en.html" class="btn btn-light p-0 flag-icon-button">
+              <div class="svg-container">
+                <svg width="90" height="67.5" viewBox="0 0 640 480" fill-rule="evenodd" clip-rule="evenodd"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality">
+                  <g fill-rule="evenodd" stroke-width="1pt">
+                    <path fill="red" d="M0 0h640v480H0z" />
+                    <g fill="#fff">
+                      <path d="M170 195h300v90H170z" />
+                      <path d="M275 90h90v300h-90z" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Payments</h2>
+    <br>
+    <div class="crypto-addresses-container">
+      <p>BTC: 3PqRUMKUTxXasPqaYvYW5RZxoCcNub3Zmq</p>
+      <p>ETH: 0xd43969C708Bb82557cD2F053D4Dade52fED99c7C</p>
+      <p>LTC: LduhYEBd2HpWrWWhqhj2xEBJidLx5TFCgh</p>
+      <p>BCH: ppd3eycmnmfuklv8azrkpnhumknlkhvq9gy4xmm7sx</p>
+    </div>
+    <br>
+    <p>
+      <a href="https://cash.app/$jonrose0">
+        <img src="https://i.imgur.com/3WqjnWO.png" alt="cash icon" />
+      </a>
+    </p>
+    <br>
+    <br>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/38d58n121d49/sacramento/?unit=us"
+      data-label_1="SACRAMENTO" data-label_2="WEATHER" data-font="Arial" data-theme="weather_one">SACRAMENTO
+      WEATHER</a>
+    <script>
+      !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
   </div>
-  
-  
-  <script src="main.js"></script>
+
+
+  <script src="main.js"></script>=
 </body>
 
 </html>
