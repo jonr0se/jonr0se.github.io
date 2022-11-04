@@ -20,7 +20,7 @@ body {
 }
 
 .place-pad {
-	color: white;
+  color: white;
 }
 
 h2 {
@@ -51,13 +51,13 @@ body {
 /* Full-sized container that fills up the parent element <body> */
 .content-container {
   text-align: center;
-  text-decoration: none; 
+  text-decoration: none;
   height: 100%;
   width: 100%;
 }
 
-.content-container p{
-    font-size: 20px;
+.content-container p {
+  font-size: 20px;
 }
 
 /* Container for the background image that fills up the 
