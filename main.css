@@ -269,3 +269,7 @@ body {
 #clock {
 	font-family: 'Inconsolata', monospace;
 }
+
+.import {
+	font-size: larger !important;
+}
